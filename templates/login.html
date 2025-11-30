@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SpamShield AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. Global Styles (Matches Home Page) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* The same Dark Background as your Home Page */
+            background-color: #1a1a2e; 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* 2. The Login Card (Dark Glass Effect) */
+        .card {
+            background: rgba(22, 33, 62, 0.8); /* Semi-transparent dark blue */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(8px); /* The "Frosted" effect */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border */
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* 3. Input Fields */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05); /* Very faint white bg */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #e94560; /* The Red/Pink accent from Home Page */
+        }
+        
+        /* Placeholder text color */
+        ::placeholder { 
+            color: #a5a5a5; 
+            opacity: 1; 
+        }
+
+        /* 4. Buttons */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px; /* Pill shape */
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+
+        /* Primary Action (Login) - Matches Home Page Button */
+        .btn-login {
+            background-color: #e94560; 
+            color: white;
+        }
+
+        /* Secondary Action (Register) */
+        .btn-register {
+            background-color: transparent;
+            border: 2px solid #e94560;
+            color: #e94560;
+            margin-top: 10px;
+        }
+        
+        .btn-register:hover {
+            background-color: #e94560;
+            color: white;
+        }
+
+        /* Divider text "or" */
+        .divider {
+            margin: 15px 0;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Flash Messages (Error text) */
+        .error-msg {
+            background-color: rgba(255, 0, 0, 0.2);
+            color: #ff6b6b;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ff6b6b;
+            font-size: 0.9rem;
+        }
+        
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #888;
+            font-size: 12px;
+            transition: color 0.3s;
+        }
+        .back-link:hover { color: white; }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Member Login</h2>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="error-msg">{{ messages[0] }}</div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required autocomplete="off">
+            <input type="password" name="password" placeholder="Password" required>
+            
+            <button type="submit" name="action" value="login" class="btn-login">Login</button>
+            
+            <div class="divider">or</div>
+            
+            <button type="submit" name="action" value="register" class="btn-register">Register New Account</button>
+        </form>
+
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+
+</body>
+</html>

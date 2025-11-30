@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpamShield AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+
+            /* 1. Set a fallback color (in case gradient fails) */
+            color: #e94560;
+
+            /* 2. Define the gradient */
+            background-image: linear-gradient(45deg, #e94560, #0f3460);
+
+            /* 3. Clip the background to the text */
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* 4. Make the text transparent so the background shows through */
+            -webkit-text-fill-color: transparent;
+            /* Standard property for future compatibility */
+            color: transparent;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #a5a5a5;
+            max-width: 600px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            background-color: #e94560;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c0354a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>SpamShield AI</h1>
+        <p>The most advanced professional tool to detect malicious emails using Machine Learning. Secure your inbox
+            today.</p>
+        <a href="/login" class="btn">Check Email Now</a>
+    </div>
+</body>
+
+</html>

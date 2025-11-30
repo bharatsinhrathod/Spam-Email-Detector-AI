@@ -1,0 +1,14 @@
+# Ignore the virtual environment folder
+venv/
+env/
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore the local database (Users should start with a fresh DB)
+instance/
+*.db
+
+# Ignore macOS system files (if you have them)
+.DS_Store
