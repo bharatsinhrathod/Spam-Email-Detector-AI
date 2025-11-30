@@ -16,9 +16,6 @@
 * **Modern UI/UX:** Responsive design featuring Glassmorphism, CSS animations, and Dark Mode.
 <img width="1897" height="909" alt="Login" src="https://github.com/user-attachments/assets/bdf886d1-4d30-4a62-9e21-355cb0245e37" /><img width="1876" height="906" alt="Admin" src="https://github.com/user-attachments/assets/20261ea7-5fcd-4fee-a5b5-85a85cd427aa" />
 <img width="1906" height="919" alt="Home" src="https://github.com/user-attachments/assets/cfb142fe-1731-4a09-99f1-2e15eb7a34ce" />
-
-f1dc-4d0c-ad01-bf2f789960f1" />
-
 <img width="1895" height="906" alt="Detector" src="https://github.com/user-attachments/assets/cb822240-8ed7-48e5-9876-934486a02573" />
 
 ## 🛠️ Tech Stack![Uploading Login.png…]()
