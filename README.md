@@ -14,8 +14,14 @@
 * **Secure Authentication:** User Login and Registration system with hashed passwords.
 * **Admin Dashboard:** Specialized panel to view registered users and monitor platform growth.
 * **Modern UI/UX:** Responsive design featuring Glassmorphism, CSS animations, and Dark Mode.
+<img width="1906" height="919" alt="Home" src="https://github.com/user-attachments/assets/e200a237-<img width="1897" height="909" alt="Login" src="https://github.com/user-attachments/assets/bdf886d1-4d30-4a62-9e21-355cb0245e37" /><img width="1876" height="906" alt="Admin" src="https://github.com/user-attachments/assets/20261ea7-5fcd-4fee-a5b5-85a85cd427aa" />
 
-## 🛠️ Tech Stack
+f1dc-4d0c-ad01-bf2f789960f1" />
+
+<img width="1895" height="906" alt="Detector" src="https://github.com/user-attachments/assets/cb822240-8ed7-48e5-9876-934486a02573" />
+
+## 🛠️ Tech Stack![Uploading Login.png…]()
+
 
 * **Backend:** Python, Flask, SQLAlchemy (Database)
 * **Machine Learning:** Scikit-learn, Pandas, Joblib (Model Persistence)
